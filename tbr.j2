@@ -1,0 +1,601 @@
+{% extends "base.j2" %}
+
+{% block content %}
+<header class="header bg-sh-air-100 sticky-top">
+  <div class="header-start">
+    <a href="https://bookdna.com/" class="p-1 text-decoration-none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="34" fill="none" viewBox="0 0 41 34">
+        <path fill="#5477b2"
+          d="M20.305 4.178c1.499-1.415 3.022-1.976 4.953-2.577a33.2 33.2 0 0 1 7.74-1.438C33.618.12 34.237.12 34.856.09c.41-.02.821-.074 1.232-.088.323-.011.708.018.95.26a.94.94 0 0 1 .23.46c.07.312.038.659.037.978l-.008 1.36c.702-.014 1.897-.115 2.548.121.298.108.555.324.683.617.081.186.114.39.122.591.021.519.006 1.043.006 1.562v11.363l.001 9.23c.002 1.566.057 3.146.007 4.71-.008.252-.023.517-.12.752-.174.416-.5.682-.907.843-.784.175-1.8.076-2.618.076l-8.688.038-2.758.003c-.49 0-1-.029-1.487.01-.613.05-1.082.537-1.634.755-.47.185-1.01.22-1.51.244-.821.04-2.036.074-2.784-.265-.489-.222-.904-.702-1.457-.757-.448-.045-.907-.033-1.357-.036l-1.754-.014-7.012-.012-3.297.005c-.699.005-1.456.092-2.145-.043a1.36 1.36 0 0 1-.668-.34c-.357-.336-.45-.816-.46-1.285-.015-.65.002-1.304.003-1.956L.012 25.6V13.997L.007 7.381V5.304c0-.362-.023-.74.009-1.1.024-.271.138-.576.334-.77.473-.472 1.275-.396 1.887-.39l1.125.013q.003-.663-.008-1.326c-.003-.31-.03-.643.019-.949.024-.15.067-.3.15-.429.134-.205.298-.289.53-.344.505-.032 1.027.064 1.532.089.587.029 1.173.04 1.76.092.731.066 1.459.185 2.186.288 2.646.374 5.727.91 8.165 2.004.944.423 1.805 1.05 2.608 1.696M5 27.574c3.677.12 7.5.577 10.976 1.827q1.127.395 2.16.996c.475.273 1.748 1.364 2.145 1.365.154 0 .306-.078.436-.153.2-.116.382-.277.564-.418.407-.315.82-.648 1.268-.903.628-.359 1.325-.619 2.007-.85 2.554-.866 5.38-1.388 8.06-1.632 1.022-.093 2.05-.091 3.07-.188l-.005-.447-.017-25.45c-1.408.001-2.814.139-4.209.309-1.01.123-2.025.246-3.024.442-2.11.413-5.32 1.341-6.873 2.903-.297.299-.708.913-1.164.924-.306.007-.575-.196-.78-.404-.38-.385-.709-.824-1.162-1.13-.647-.435-1.393-.731-2.119-1.008a24 24 0 0 0-3.512-1.07c-1.351-.29-2.728-.445-4.097-.625-.482-.063-.95-.198-1.43-.26-.757-.096-1.53-.106-2.292-.144zm-3.29 3.607h9.16l3.265-.029c.465-.004 1.098.038 1.54-.002l-.023-.01c-.44-.2-.948-.322-1.41-.456-2.415-.7-4.92-1.077-7.422-1.282q-.884-.065-1.77-.108c-.346-.02-.715-.016-1.054-.09-.261-.055-.496-.206-.595-.463-.15-.392-.065-2.635-.064-3.199l.003-4.565V4.767l-1.638-.001zM37.3 4.775l.003 15.795v5.275c0 .826.05 1.745-.006 2.555-.015.221-.065.433-.224.598-.184.191-.42.223-.67.256-.462.061-.933.068-1.398.09q-.754.031-1.504.098c-2.395.2-4.765.627-7.079 1.273-.48.136-1.012.252-1.468.454.573-.046 1.162-.02 1.738-.018l12.284.003-.007-17.556-.001-5.979q.013-1.422.004-2.846a97 97 0 0 0-1.673.002">
+        </path>
+        <path fill="#5477b2"
+          d="M24.698 5.793c.122-.008.247-.01.366.017a.83.83 0 0 1 .525.39c.45.75.21 2.42-.009 3.265-.525 2.027-2.079 3.218-3.792 4.225 1.165.72 2.329 1.545 2.959 2.807.491.984.587 2.311.238 3.355-.333.995-1.107 1.913-1.969 2.498a8.5 8.5 0 0 1-1.015.564c1.194.834 2.775 1.915 3.227 3.369.103.33.18.784.004 1.099a.6.6 0 0 1-.365.274 1 1 0 0 1-.725-.076c-.38-.22-.485-.797-.595-1.187l-3.805-.003c-.888 0-1.777-.013-2.665.028-.123.356-.228.903-.535 1.148-.176.14-.399.162-.614.132a.74.74 0 0 1-.534-.321c-.153-.253-.128-.573-.06-.849.418-1.679 1.936-2.743 3.34-3.579-1.074-.64-2.02-1.396-2.698-2.463-.592-.932-.66-2.024-.42-3.085.393-1.748 1.857-2.786 3.28-3.687-.72-.489-1.423-.935-2.054-1.542-1.192-1.147-1.934-2.627-1.96-4.298-.007-.532.002-1.436.411-1.834a.7.7 0 0 1 .536-.177c.23.015.472.115.62.297.294.36.073 1.067.02 1.494q1.867-.014 3.736-.001c.523.008 1.044.046 1.567.056q1.282.03 2.56-.054c.004-.47-.3-1.1-.06-1.526.11-.195.281-.273.486-.336m-1.365 4.322c.065-.003.09.007.137-.043.256-.272.48-.904.588-1.263a173 173 0 0 0-3.748-.026c-.996-.003-1.992-.02-2.987-.013l-.773.01c.167.468.364.9.61 1.332.882 0 1.766-.008 2.648.007.472.007.942.042 1.414.042.705 0 1.407-.037 2.11-.046m-6.256 8.542c.99-.012 1.98-.03 2.97.008 1.157.073 2.324.013 3.482-.017a3.7 3.7 0 0 0-.16-1.24c-.93 0-1.874-.037-2.8.014l-1.9.022c-.462.01-.944.045-1.404-.01-.108.409-.187.798-.188 1.223m3.317 3.409c.615-.354 1.244-.698 1.838-1.085.432-.324.728-.69 1.017-1.144q-2.905.024-5.81.002c.729 1.105 1.794 1.677 2.955 2.227m-.114-9.353c.443-.275.892-.544 1.328-.83.285-.19.58-.376.835-.605-1.395-.012-2.794.028-4.188-.012.49.591 1.37 1.047 2.025 1.447m2.258 12.534c-.64-.544-1.371-.988-2.124-1.36-.737.402-1.485.792-2.15 1.309a25 25 0 0 1 2.154.022c.702.073 1.416.005 2.12.029m-2.256-10.582c-.82.468-1.639.944-2.326 1.598q1.216-.001 2.434.022 1.117 0 2.235-.023a4.4 4.4 0 0 0-.512-.463c-.217-.166-1.618-1.109-1.808-1.134z">
+        </path>
+      </svg>
+    </a>
+    <a href="https://bookdna.com/#" class="rd-btn btn-sm btn-sh-blue-900 ms-4"> Give Feedback </a>
+  </div>
+
+  <div class="header-center">
+    <script>
+      function addGlobalShortcut(key, callback) {
+        window.addEventListener("keydown", function (e) {
+          // Play it safe, do not trigger in input fields
+          const tag = e.target.tagName;
+          const isEditable = e.target.isContentEditable;
+          if (tag === "INPUT" || tag === "TEXTAREA" || isEditable) return;
+
+          if ((e.metaKey || e.ctrlKey) && e.key === key) {
+            e.preventDefault();
+            callback();
+          }
+        });
+      }
+    </script>
+
+    <script>
+      addGlobalShortcut("/", () =>
+        document.getElementById("header-search-dialog").showModal(),
+      );
+    </script>
+
+    <button class="header-search-form" onclick="this.nextElementSibling.showModal()">
+      <div class="search-form-group">
+        <span class="search-form-group__addon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+            <path fill="#8494a8"
+              d="M11.744 10.343a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.413l-3.85-3.85a1 1 0 0 0-.115-.1m.258-3.844A5.5 5.5 0 0 1 1.42 8.604a5.5 5.5 0 1 1 10.582-2.105">
+            </path>
+          </svg>
+        </span>
+        <div class="search-form-group__field">Search all books...</div>
+      </div>
+    </button>
+
+
+
+
+    <dialog class="rd-search-dialog" id="header-search-dialog" onclose="history.pushState(null, null, &quot;/&quot;)"
+      onmousedown="event.target==this &amp;&amp; this.requestClose()" aria-label="Search all books">
+      <section class="rd-search-dialog-content">
+        <header class="header">
+          <div class="header-start"></div>
+          <div class="header-center">
+            <div class="header-search-form mx-auto">
+              <form class="search-form-group" hx-get="/search" hx-trigger="input delay:500ms, submit changed"
+                hx-target="#search-results" hx-select="#search-results" hx-swap="outerHTML" hx-push-url="true"
+                style="--search-addon-border-color: #ffffff; --search-bg-color: #ffffff; --search-border-color: #ffffff;">
+                <span class="search-form-group__addon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <path fill="#8494a8"
+                      d="M11.744 10.343a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.413l-3.85-3.85a1 1 0 0 0-.115-.1m.258-3.844A5.5 5.5 0 0 1 1.42 8.604a5.5 5.5 0 1 1 10.582-2.105">
+                    </path>
+                  </svg>
+                </span>
+                <input name="q" value="" class="search-form-group__field" placeholder="Search all books..."
+                  autocomplete="off" type="text">
+                <span class="search-form-group__addon">
+                  <button class="search-form-group__clear" type="button">
+                    ×
+                  </button>
+
+                  <span class="search-form-group__indicator htmx-indicator" role="status" aria-hidden="true"></span>
+                </span>
+
+              </form>
+            </div>
+          </div>
+          <div class="header-end">
+
+            <button type="button" class="rd-btn-close " aria-label="Close"
+              onclick="this.closest(&#39;dialog&#39;).requestClose()"></button>
+
+          </div>
+        </header>
+        <div class="rd-search-dialog-body" id="search-results">
+          <div class="rd-search-dialog-body-inner">
+          </div>
+        </div>
+      </section>
+    </dialog>
+
+
+
+  </div>
+
+  <div class="header-end header-user-actions">
+    <a href="https://bookdna.com/#" class="rd-btn btn-sm btn-success ps-2 pe-3">
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="icon-btn" viewBox="-2 -2 16 16">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+          d="M6 2.5v7M2.5 6h7"></path>
+      </svg>
+
+      Add TBR
+    </a>
+    <a href="https://bookdna.com/#" class="rd-btn btn-sm btn-primary ps-2 pe-3">
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="icon-btn" viewBox="-2 -2 16 16">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+          d="M6 2.5v7M2.5 6h7"></path>
+      </svg>
+
+      Log Read
+    </a>
+
+    <div class="dropdown">
+      <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 34 34">
+          <path fill="#c7d7fe" stroke="#5477b2" stroke-width="2"
+            d="M17 2c8.284 0 15 6.716 15 15 0 3.804-1.416 7.276-3.751 9.92-.812-1.485-2.012-2.543-3.675-3.22-1.944-.79-4.462-1.033-7.574-1.033-3.094 0-5.598.259-7.538 1.059-1.663.685-2.865 1.748-3.683 3.228A14.94 14.94 0 0 1 2 17C2 8.716 8.716 2 17 2Zm0 4.667a6.778 6.778 0 1 0 .001 13.556A6.778 6.778 0 0 0 17 6.667Z">
+          </path>
+          <path fill="#c7d7fe" stroke="#5477b2" stroke-width="2"
+            d="M33 17c0 8.837-7.163 16-16 16S1 25.837 1 17 8.163 1 17 1s16 7.163 16 16Z"></path>
+          <path stroke="#5477b2" stroke-width="2"
+            d="M22.333 13.445a5.333 5.333 0 1 1-10.666 0 5.333 5.333 0 0 1 10.666 0Z"></path>
+          <path stroke="#5477b2" stroke-linecap="round" stroke-width="2"
+            d="M6.625 28.556C7.935 25.161 10.891 24.11 17 24.11c6.162 0 9.116.992 10.409 4.444"></path>
+        </svg>
+      </a>
+
+      <ul class="dropdown-menu dropdown-menu-end header-user-dropdown__menu">
+
+        <li>
+          <a class="dropdown-item" href="https://bookdna.com/#">Edit Profile</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="https://bookdna.com/accounts/logout">Log out</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="readerapp-container">
+
+  <aside class="sidebar">
+    <nav class="nav-vertical">
+      <ul class="primary-nav">
+        <li class="primary-nav__item">
+          <a href="/" class="primary-nav__link primary-nav__link--active">
+            <span class="primary-nav__link-icon">
+
+              <img src="{{ static_url }}/images/Icons-1.svg" alt="my_tbr" width="16" height="17" loading="lazy">
+            </span>
+            <span class="primary-nav__label">My TBR</span>
+          </a>
+        </li>
+        <li class="primary-nav__item">
+          <a href="/reading-log" class="primary-nav__link">
+            <span class="primary-nav__link-icon">
+              <img src="{{ static_url }}/images/Frame 104.svg" alt="my_log" width="16" height="17" loading="lazy">
+            </span>
+            <span class="primary-nav__label">My Log</span>
+          </a>
+        </li>
+        <li class="primary-nav__item">
+          <a href="/reading-log" class="primary-nav__link">
+            <span class="primary-nav__link-icon">
+              <img src="{{ static_url }}/images/Stats.svg" alt="folders" width="16" height="17" loading="lazy">
+            </span>
+            <span class="primary-nav__label">Folders</span>
+          </a>
+        </li>
+        <li class="primary-nav__item">
+          <a href="/reading-log" class="primary-nav__link">
+            <span class="primary-nav__link-icon">
+              <img src="{{ static_url }}/images/Vector-1.svg" alt="dna" width="16" height="17" loading="lazy">
+            </span>
+            <span class="primary-nav__label">My Book DNA</span>
+          </a>
+        </li>
+        <li class="primary-nav__item">
+          <a href="/reading-log" class="primary-nav__link">
+            <span class="primary-nav__link-icon">
+              <img src="{{ static_url }}/images/Stats.svg" alt="twins" width="16" height="17" loading="lazy">
+            </span>
+            <span class="primary-nav__label">My Book Twins</span>
+          </a>
+        </li>
+        <li class="primary-nav__item">
+          <a href="/reading-log" class="primary-nav__link">
+            <span class="primary-nav__link-icon">
+              <img src="{{ static_url }}/images/Stats.svg" alt="Stats" width="16" height="17" loading="lazy">
+            </span>
+            <span class="primary-nav__label">Stats</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="secondary-nav">
+        <div class="mb-3">
+          <h5 class="mb-2">My Book Twins</h5>
+          <ul class="list-simple">
+            <li>
+              <a href="/" class="list-simple__item list-simple__item--active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none" viewBox="0 0 14 12">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M0 1.385C0 .62.627 0 1.4 0h3.927l1.866 1.846H12.6c.773 0 1.4.62 1.4 1.385v7.384C14 11.38 13.373 12 12.6 12H1.4C.627 12 0 11.38 0 10.615z"
+                    clip-rule="evenodd" />
+                </svg>
+                My TBR
+              </a>
+            </li>
+            <li>
+              <a href="/?is_read_next=true" class="list-simple__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none" viewBox="0 0 14 12">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M0 1.385C0 .62.627 0 1.4 0h3.927l1.866 1.846H12.6c.773 0 1.4.62 1.4 1.385v7.384C14 11.38 13.373 12 12.6 12H1.4C.627 12 0 11.38 0 10.615z"
+                    clip-rule="evenodd" />
+                </svg>
+                My TBR: read next
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-heading page-heading--border-bottom">
+      <div class="page-heading__top-section">
+        <h1 class="page-heading__title">
+          My <span title="to be read">Book Twins</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="book-twins-info">
+      <div class="book-twins-info__intro">
+        <p>How does this work: A Book Twin is someone who loves the books you love, and dislikes the books you dislike.
+        </p>
+      </div>
+
+      <div class="book-twins-info__stats">
+        <div class="info-stat">
+          <div class="info-stat__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <div class="info-stat__content">
+            <div class="info-stat__value">282</div>
+            <div class="info-stat__label">books analyzed</div>
+          </div>
+        </div>
+
+        <div class="info-stat">
+          <div class="info-stat__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="info-stat__content">
+            <div class="info-stat__value">January 1st (29 days 10 hours 36 minutes)</div>
+            <div class="info-stat__label">next Book Twin update</div>
+          </div>
+        </div>
+
+        <div class="info-stat info-stat--upgrade">
+          <div class="info-stat__content">
+            <a href="#" class="info-stat__link">Upgrade to Pro</a>
+            <div class="info-stat__label">for real-time updates and unlimited twins.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-twins-info__description">
+        <p>We analyzed the <strong>282 books</strong> in your log to find other readers who love what you love and
+          dislike what you dislike. As we grow, your matches will improve, and your book recommendations will keep
+          improving. We are on a quest to find you books you will love!</p>
+      </div>
+
+      <div class="book-twins-info__privacy">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        <span>Privacy: Your reading data is fully anonymized.</span>
+      </div>
+    </div>
+
+
+    <div id="content">
+      <div class="page-content">
+
+
+        <section class="book-twins-list">
+          <div class="section-header">
+            <h2>Meet your 10 Book Twins</h2>
+            <p class="section-subtitle">These are your closest Book DNA matches (they love what you love, and dislike
+              what you dislike).</p>
+          </div>
+
+          <div class="book-twins-grid">
+            {% for twin in book_twins %}
+            <div class="book-twin-card">
+              <div class="book-twin-card__header">
+                <div class="book-twin-card__badge">
+                  <h3>
+                    {% if twin.ui.icon %}
+                    <span aria-hidden="true">{{ twin.ui.icon }}</span>
+                    {% endif %}
+                    Book Twin #{{ loop.index }}
+                  </h3>
+                </div>
+
+                <div class="book-twin-card__match">
+                  <span class="match-badge match-badge--{{ twin.match.level }}">
+                    DNA match: {{ twin.match.label }}
+                  </span>
+                </div>
+              </div>
+
+              <div class="book-twin-card__stats">
+                <div class="match-stat">
+                  <span class="match-stat__value">
+                    {{ twin.stats.shared_books }} matching books
+                  </span>
+                </div>
+
+                {% if twin.stats.breakdown %}
+                <div class="match-stat">
+                  <div class="match-stat__icons">
+                    {% for stat in twin.stats.breakdown %}
+                    <span>{{ stat.icon }} x{{ stat.count }}</span>
+                    {% endfor %}
+                  </div>
+                </div>
+                {% endif %}
+              </div>
+
+              {% if twin.preview_books %}
+              <div class="book-twin-card__preview">
+                {% for book in twin.preview_books[:8] %}
+                <img src="{{ book.cover_url }}" alt="{{ book.title }}" class="preview-book-cover" width="128"
+                  loading="lazy">
+                {% endfor %}
+              </div>
+              {% endif %}
+
+              {% if twin.labels %}
+              <div class="book-twin-card__labels">
+                {% for label in twin.labels %}
+                <span class="book-label">{{ label }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+
+              <div class="book-twin-card__actions">
+                <a href="{{ twin.actions.url }}" class="rd-btn btn-sm btn-link">
+                  {{ twin.actions.label }} →
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+
+          <div class="section-footer text-center">
+            <button class="rd-btn btn-outline">Show more</button>
+          </div>
+        </section>
+
+
+        <section class="loved-books">
+          <div class="section-header">
+            <h2>What do your Book Twins love?</h2>
+          </div>
+
+          <div class="books-carousel">
+            {% for book in loved_books %}
+            
+            <div class="book-card">
+              <a href="/book/{{ book.id }}" class="book-card__cover-link">
+                <img
+                  src="{{ book.cover_url }}"
+                  alt="{{ book.title }}" class="book-card__cover" width="128">
+              </a>
+              <div class="book-card__info">
+                <h4 class="book-card__title">{{ book.title }}</h4>
+                <p class="book-card__author">{{ book.author }}</p>
+              </div>
+              {% if book.loved_by_count %}
+              <div class="book-card__meta">
+                <span class="book-card__loved-by">Crowned by {{ book.loved_by_count }} Book Twins</span>
+              </div>
+              {% endif %}
+              <div class="book-card__actions">
+                <button class="rd-btn btn-sm btn-outline">+ Add TBR</button>
+              </div>
+            </div>
+
+            {% endfor %}
+
+          </div>
+        </section>
+
+
+        {% if book_twins %}
+        <section class="book-twins-list">
+          <div class="section-header">
+            <h2>Meet your {{ book_twins|length }} Book Twins</h2>
+            <p class="section-subtitle">{{ twins_subtitle }}</p>
+          </div>
+
+          <div class="book-twins-grid">
+            {% for twin in book_twins %}
+            <div class="book-twin-card">
+              <div class="book-twin-card__header">
+                <img src="{{ twin.avatar_url }}" alt="{{ twin.name }}" class="book-twin-card__avatar">
+                <div class="book-twin-card__info">
+                  <h3 class="book-twin-card__name">{{ twin.name }}</h3>
+                  {% if twin.location %}
+                  <p class="book-twin-card__location">{{ twin.location }}</p>
+                  {% endif %}
+                </div>
+              </div>
+
+              <div class="book-twin-card__stats">
+                <div class="match-stat">
+                  <span class="match-stat__value">{{ twin.shared_books_count }}</span>
+                  <span class="match-stat__label">books in common</span>
+                </div>
+                {% if twin.match_percentage %}
+                <div class="match-stat">
+                  <span class="match-stat__value">{{ twin.match_percentage }}%</span>
+                  <span class="match-stat__label">match</span>
+                </div>
+                {% endif %}
+              </div>
+
+              <div class="book-twin-card__actions">
+                <a href="/compare/{{ twin.id }}" class="rd-btn btn-sm btn-primary">Compare</a>
+                {% if twin.is_following %}
+                <button class="rd-btn btn-sm btn-secondary">Following</button>
+                {% else %}
+                <button class="rd-btn btn-sm btn-outline">Follow</button>
+                {% endif %}
+              </div>
+
+              {% if twin.preview_books %}
+              <div class="book-twin-card__preview">
+                {% for book in twin.preview_books[:3] %}
+                <img src="{{ book.cover_url }}" alt="{{ book.title }}" class="preview-book-cover">
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+
+          {% if show_see_all %}
+          <div class="section-footer">
+            <a href="/book-twins/all" class="rd-btn btn-link">See all {{ total_twins_count }} Book Twins →</a>
+          </div>
+          {% endif %}
+        </section>
+        {% endif %}
+
+        {% if recommended_books %}
+        <section class="recommended-books">
+          <div class="section-header">
+            <h2>📚 Book Twin Rec</h2>
+            <p class="section-subtitle">{{ recommendations_subtitle }}</p>
+          </div>
+
+          <div class="books-carousel">
+            {% for book in recommended_books %}
+            <div class="book-card">
+              <a href="/book/{{ book.id }}" class="book-card__cover-link">
+                <img src="{{ book.cover_url }}" alt="{{ book.title }}" class="book-card__cover">
+              </a>
+              <div class="book-card__info">
+                <h4 class="book-card__title">{{ book.title }}</h4>
+                <p class="book-card__author">{{ book.author }}</p>
+                {% if book.avg_rating %}
+                <div class="book-card__rating">
+                  <span class="rating-stars">★</span>
+                  <span class="rating-value">{{ "%.2f"|format(book.avg_rating) }}</span>
+                  <span class="rating-count">({{ book.ratings_count }})</span>
+                </div>
+                {% endif %}
+              </div>
+              <div class="book-card__actions">
+                <button class="rd-btn btn-sm btn-success">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="-2 -2 16 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="M6 2.5v7M2.5 6h7" />
+                  </svg>
+                  Add
+                </button>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          {% if show_more_recommendations %}
+          <div class="section-footer">
+            <a href="/recommendations" class="rd-btn btn-link">See more recommendations →</a>
+          </div>
+          {% endif %}
+        </section>
+        {% endif %}
+
+        {% if loved_books %}
+        <section class="loved-books">
+          <div class="section-header">
+            <h2>What do your Book Twins love?</h2>
+            {% if loved_books_subtitle %}
+            <p class="section-subtitle">{{ loved_books_subtitle }}</p>
+            {% endif %}
+          </div>
+
+          <div class="books-grid">
+            {% for book in loved_books %}
+            <div class="book-card book-card--loved">
+              <a href="/book/{{ book.id }}" class="book-card__cover-link">
+                <img src="{{ book.cover_url }}" alt="{{ book.title }}" class="book-card__cover">
+              </a>
+              <div class="book-card__info">
+                <h4 class="book-card__title">{{ book.title }}</h4>
+                <p class="book-card__author">{{ book.author }}</p>
+                {% if book.avg_rating %}
+                <div class="book-card__rating">
+                  <span class="rating-stars">★</span>
+                  <span class="rating-value">{{ "%.2f"|format(book.avg_rating) }}</span>
+                  {% if book.ratings_count %}
+                  <span class="rating-count">({{ book.ratings_count }})</span>
+                  {% endif %}
+                </div>
+                {% endif %}
+                {% if book.loved_by_count %}
+                <p class="book-card__loved-by">
+                  Loved by {{ book.loved_by_count }} of your twins
+                </p>
+                {% endif %}
+              </div>
+              <div class="book-card__actions">
+                <button class="rd-btn btn-sm btn-outline">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="-2 -2 16 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                      d="M6 2.5v7M2.5 6h7" />
+                  </svg>
+                  I want to read
+                </button>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+
+        {% if not book_twins and not recommended_books and not loved_books %}
+        <div class="empty-state">
+          <div class="text-center">
+            <img src="{{ static_url }}/images/sleepy.svg" alt="No Book Twins" class="empty-state__image">
+            <h3>No Book Twins yet</h3>
+            <p>Start adding books to your TBR to find readers with similar taste!</p>
+            <a href="/search" class="rd-btn btn-primary">Find Books</a>
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
